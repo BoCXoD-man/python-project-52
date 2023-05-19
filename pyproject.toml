@@ -13,5 +13,5 @@ dj-database-url = "^2.0.0"
 [tool.poetry.dev-dependencies]
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["python >= 3.9.12", "poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
