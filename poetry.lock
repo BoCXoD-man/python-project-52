@@ -39,6 +39,20 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "gunicorn"
+version = "20.1.0"
+description = "WSGI HTTP Server for UNIX"
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[package.extras]
+eventlet = ["eventlet (>=0.24.1)"]
+gevent = ["gevent (>=1.4.0)"]
+setproctitle = ["setproctitle"]
+tornado = ["tornado (>=0.2)"]
+
+[[package]]
 name = "python-dotenv"
 version = "1.0.0"
 description = "Read key-value pairs from a .env file and set them as environment variables"
@@ -81,12 +95,13 @@ python-versions = ">=2"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.12"
-content-hash = "52546c6ffe0c43569bd3f886811eb3f3545d51a2c0891cc5b08894c1d2b44d1e"
+content-hash = "cf6dcb1c218cd47b77136d00d72b309eb48a21ce85c18cea05fc270cc2c050ce"
 
 [metadata.files]
 asgiref = []
 dj-database-url = []
 django = []
+gunicorn = []
 python-dotenv = []
 sqlparse = []
 typing-extensions = []
