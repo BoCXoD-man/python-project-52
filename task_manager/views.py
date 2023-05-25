@@ -1,4 +1,7 @@
-from django.http import HttpResponse
+from django.views.generic import TemplateView
+from django.utils.translation import gettext_lazy as _
 
-def home(request):
-    return HttpResponse("Приветствие")
+
+class IndexView(TemplateView):
+    template_name = 'index.html'
+    extra_context = {'title': _('Task manager')}

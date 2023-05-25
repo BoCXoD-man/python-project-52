@@ -20,5 +20,5 @@ from task_manager.views import *
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('', home, name='home'),
+    path('', IndexView.as_view(), name='home'),
 ]
