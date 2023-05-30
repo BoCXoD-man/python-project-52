@@ -1,9 +1,9 @@
 {
     "create": {
       "valid": {
-        "username": "Richie",
-        "first_name": "Ringo",
-        "last_name": "Starr",
+        "username": "Lol1",
+        "first_name": "Lolkas",
+        "last_name": "Lolkeks",
         "password1": "p@$$w0rd",
         "password2": "p@$$w0rd"
       },
@@ -16,44 +16,44 @@
       },
       "invalid": {
         "username": "R!c h1e",
-        "first_name": "Ringo",
-        "last_name": "Starr",
+        "first_name": "Leosdam",
+        "last_name": "Sterr",
         "password1": "p@$$w0rd",
         "password2": "p@$$w0rd"
       },
       "exists": {
-        "username": "Lennie",
-        "first_name": "John",
-        "last_name": "Lennon",
+        "username": "Mandalorian",
+        "first_name": "Bobba",
+        "last_name": "Fett",
         "password1": "p@$$w0rd",
         "password2": "p@$$w0rd"
       },
       "pass_missing": {
-        "username": "Richie_2",
-        "first_name": "Ringo",
-        "last_name": "Starr",
+        "username": "Jedy",
+        "first_name": "Mace",
+        "last_name": "Window",
         "password1": "",
         "password2": ""
       },
       "pass_not_match": {
-        "username": "Richie_3",
-        "first_name": "Ringo",
-        "last_name": "Starr",
+        "username": "Obivan",
+        "first_name": "Obivan_",
+        "last_name": "Kenobi",
         "password1": "p@$$w0rd",
         "password2": "password"
       },
       "pass_too_short": {
-        "username": "Richie_4",
-        "first_name": "Ringo",
-        "last_name": "Starr",
+        "username": "Imperator",
+        "first_name": "Palpatin",
+        "last_name": "Kanzler",
         "password1": "p",
         "password2": "p"
       }
     },
     "update": {
-      "username": "First",
-      "first_name": "Stuart",
-      "last_name": "Sutcliffe",
+      "username": "Graf",
+      "first_name": "Graf_",
+      "last_name": "Duku",
       "password1": "password",
       "password2": "password"
     }
