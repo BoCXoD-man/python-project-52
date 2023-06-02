@@ -151,7 +151,7 @@ Django = ">=3.2"
 
 [[package]]
 name = "django-filter"
-version = "23.2"
+version = "22.1"
 description = "Django-filter is a reusable Django application for allowing users to filter querysets dynamically."
 category = "main"
 optional = false
@@ -523,7 +523,7 @@ brotli = ["brotli"]
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.12"
-content-hash = "175a450f08e19aee4199c946016a2dfe2362ab3ca72dc75a172e5478adfa0e9e"
+content-hash = "2d7fbc569ada6d3fccef3b137529026897ee15ce00cb8bb2d6bc7bdd65f6f18b"
 
 [metadata.files]
 appnope = [
