@@ -1,0 +1,26 @@
+[
+    {
+      "model": "labels.label",
+      "pk": 1,
+      "fields": {
+        "name": "Personal",
+        "date_created": "2023-06-05T14:40:20.129Z"
+      }
+    },
+    {
+      "model": "labels.label",
+      "pk": 2,
+      "fields": {
+        "name": "Work",
+        "date_created": "2023-06-05T14:42:15.129Z"
+      }
+    },
+    {
+      "model": "labels.label",
+      "pk": 3,
+      "fields": {
+        "name": "Study",
+        "date_created": "2023-06-05T14:44:37.129Z"
+      }
+    }
+  ]

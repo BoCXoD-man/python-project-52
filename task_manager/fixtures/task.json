@@ -1,0 +1,41 @@
+[
+  {
+    "model": "tasks.task",
+    "pk": 1,
+    "fields": {
+      "name": "Obi",
+      "description": "Kenobi!",
+      "author": 1,
+      "executor": 3,
+      "status": 1,
+      "date_created": "2023-05-06T12:40:30.456Z",
+      "labels": []
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 2,
+    "fields": {
+      "name": "Kwaigon",
+      "description": "Djinz",
+      "author": 1,
+      "executor": 1,
+      "status": 1,
+      "date_created": "2023-05-06T12:43:30.456Z",
+      "labels": [1]
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 3,
+    "fields": {
+      "name": "Dart",
+      "description": "Wader",
+      "author": 3,
+      "executor": 1,
+      "status": 2,
+      "date_created": "2023-05-06T12:45:30.456Z",
+      "labels": [1, 2]
+    }
+  }
+]

@@ -1,0 +1,28 @@
+{
+    "create": {
+      "valid": {
+        "name": "Star",
+        "description": "It is time to watch",
+        "executor": 2,
+        "status": 1
+      },
+      "missing_fields": {
+        "name": "",
+        "description": "",
+        "executor": "",
+        "status": ""
+      },
+      "exists": {
+        "name": "Wars",
+        "description": "",
+        "executor": 2,
+        "status": 1
+      }
+    },
+    "update": {
+        "name": "Film",
+        "description": "",
+        "executor": 2,
+        "status": 2
+      }
+  }
