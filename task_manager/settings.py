@@ -37,6 +37,7 @@ ALLOWED_HOSTS = [
     '0.0.0.0',
     '.railway.app',
     'localhost',
+    'http://0.0.0.0:8000/'
 ]
 
 
@@ -53,10 +54,10 @@ INSTALLED_APPS = [
     'django_extensions',
     'django_filters',
     'task_manager',
+    'task_manager.users',
     'task_manager.statuses',
     'task_manager.tasks',
-    'task_manager.labels',
-    'task_manager.users',
+    'task_manager.labels'
 ]
 
 MIDDLEWARE = [
@@ -106,23 +107,12 @@ DATABASES = {
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
-    # {
-    #     'NAME': 'django.contrib.auth.password_validation.'
-    #             'UserAttributeSimilarityValidator',
-    # },
     {
         'NAME': 'django.contrib.auth.password_validation.'
                 'MinimumLengthValidator',
         'OPTIONS': {'min_length': 3, }
     },
-    # {
-    #     'NAME': 'django.contrib.auth.password_validation.'
-    #             'CommonPasswordValidator',
-    # },
-    # {
-    #     'NAME': 'django.contrib.auth.password_validation.'
-    #             'NumericPasswordValidator',
-    # },
+
 ]
 
 AUTH_USER_MODEL = 'users.User'
@@ -130,11 +120,6 @@ AUTH_USER_MODEL = 'users.User'
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-# ОШИБКА!!!!
-# if os.getenv('LANGUAGE'):
-#     LANGUAGE_CODE = os.getenv('LANGUAGE')
-# else:
-#     LANGUAGE_CODE = 'ru-ru'
 LANGUAGE_CODE = 'ru-ru'
 
 TIME_ZONE = 'UTC'
@@ -157,7 +142,8 @@ LOCALE_PATHS = (
 
 STATIC_URL = 'static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT =os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 

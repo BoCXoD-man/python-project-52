@@ -61,7 +61,6 @@ class TestCreateTask(TaskTestCase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(Task.objects.count(), self.count)
 
-
     def test_create_long_field(self) -> None:
         task_data = self.test_task['create']['valid'].copy()
         task_data.update({'name': 'name' * 50})
