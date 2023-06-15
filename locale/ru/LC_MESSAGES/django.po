@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 11:56+0000\n"
+"POT-Creation-Date: 2023-01-29 19:53+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -229,8 +229,13 @@ msgstr "Страница не найдена"
 
 #: task_manager/templates/404.html:7 task_manager/templates/form.html:7
 #: task_manager/templates/index.html:7 task_manager/templates/index.html:13
+#: task_manager/templates/labels/delete.html:7
+#: task_manager/templates/labels/labels.html:7
 #: task_manager/templates/statuses/delete.html:7
 #: task_manager/templates/statuses/statuses.html:7
+#: task_manager/templates/tasks/delete.html:7
+#: task_manager/templates/tasks/task_show.html:7
+#: task_manager/templates/tasks/tasks.html:7
 #: task_manager/templates/users/delete.html:6
 #: task_manager/templates/users/users.html:6 task_manager/tests.py:35
 msgid "Task Manager"
@@ -256,17 +261,25 @@ msgstr "Простое веб-приложение для управления �
 msgid "Get Started"
 msgstr "Приступить к работе"
 
+#: task_manager/templates/labels/delete.html:14
 #: task_manager/templates/statuses/delete.html:14
+#: task_manager/templates/tasks/delete.html:14
 #: task_manager/templates/users/delete.html:12
 msgid "Are you sure you want to delete"
 msgstr "Вы уверены, что хотите удалить"
 
+#: task_manager/templates/labels/labels.html:33
 #: task_manager/templates/statuses/statuses.html:33
+#: task_manager/templates/tasks/task_show.html:58
+#: task_manager/templates/tasks/tasks.html:48
 #: task_manager/templates/users/users.html:31 task_manager/users/views.py:56
 msgid "Update"
 msgstr "Изменить"
 
+#: task_manager/templates/labels/labels.html:35
 #: task_manager/templates/statuses/statuses.html:35
+#: task_manager/templates/tasks/task_show.html:60
+#: task_manager/templates/tasks/tasks.html:50
 #: task_manager/templates/users/users.html:33
 msgid "Delete"
 msgstr "Удалить"
