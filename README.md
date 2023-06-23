@@ -4,3 +4,6 @@
 ![Lint Check](https://github.com/BoCXoD-man/python-project-52/actions/workflows/lint_check.yml/badge.svg)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/f87a0bbe68109b158ee4/test_coverage)](https://codeclimate.com/github/BoCXoD-man/python-project-52/test_coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/f87a0bbe68109b158ee4/maintainability)](https://codeclimate.com/github/BoCXoD-man/python-project-52/maintainability)
+
+
+https://python-project-52-production-96e7.up.railway.app/ - Ссылка на Менеджер задач.
