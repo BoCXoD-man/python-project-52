@@ -1,6 +1,6 @@
 from django.urls import reverse_lazy
 
-from task_manager.labels.tests.testcase import LabelTestCase
+from .testcase import LabelTestCase
 
 
 class TestListLabels(LabelTestCase):
