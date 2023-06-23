@@ -6,7 +6,6 @@ class LabelFormTest(LabelTestCase):
     def test_valid_form(self) -> None:
         label_data = self.test_label['create']['valid'].copy()
         form = LabelForm(data=label_data)
-
         self.assertTrue(form.is_valid())
 
     def test_invalid_form(self) -> None:
@@ -14,4 +13,3 @@ class LabelFormTest(LabelTestCase):
         form = LabelForm(data=label_data)
 
         self.assertFalse(form.is_valid())
-        
