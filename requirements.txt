@@ -14,7 +14,7 @@ django-filter==22.1
 executing==1.2.0
 flake8==6.0.0
 gunicorn==20.1.0
--e git+ssh://git@github.com/BoCXoD-man/python-project-52.git@2a271928566b462a2aa40d6f431dbde5c59d41a6#egg=hexlet_code
+-e git+ssh://git@github.com/BoCXoD-man/python-project-52.git@1c1849553b4236298ba7105d6480159187bd851a#egg=hexlet_code
 idna==3.4
 ipython==8.12.2
 jedi==0.18.2
@@ -24,7 +24,7 @@ parso==0.8.3
 pexpect==4.8.0
 pickleshare==0.7.5
 prompt-toolkit==3.0.38
-psycopg2==2.9.6
+psycopg2-binary==2.9.6
 ptyprocess==0.7.0
 pure-eval==0.2.2
 pycodestyle==2.10.0
