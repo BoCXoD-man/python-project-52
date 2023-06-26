@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{ include = "task_manager" }]
 
 [tool.poetry.dependencies]
-python = "^3.8.1"
+python = "^3.9.12"
 Django = "^4.1.5"
 python-dotenv = "^0.21.0"
 dj-database-url = "^0.5.0"
@@ -24,5 +24,5 @@ flake8 = "^6.0.0"
 coverage = "^7.0.5"
 
 [build-system]
-requires = ["python >= 3.8.1", "poetry-core>=1.0.0"]
+requires = ["python >= 3.9.12", "poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
