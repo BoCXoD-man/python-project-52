@@ -6,16 +6,21 @@ from .models import User
 
 
 class UserForm(UserCreationForm):
-
-    first_name = forms.CharField(
-        max_length=150, required=True, label=_("First name")
-    )
-    last_name = forms.CharField(
-        max_length=150, required=True, label=_("Last name")
-    )
+    first_name = forms.CharField(max_length=150, required=True, label=_("First name"))
+    last_name = forms.CharField(max_length=150, required=True, label=_("Last name"))
 
     class Meta(UserCreationForm.Meta):
         model = User
-        fields = ('first_name', 'last_name',
-                  'username', 'password1', 'password2'
-                  )
+        fields = ('first_name', 'last_name', 'username', 'password1', 'password2')
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        if self.instance:
+            # При редактировании пользователя удаляем проверку уникальности имени пользователя
+            self.fields['username'].validators = []
+
+    def clean_username(self):
+        username = self.cleaned_data['username']
+        if self.instance and self.instance.username == username:
+            return username  # Пропускаем проверку уникальности имени пользователя при обновлении
+        return super().clean_username()

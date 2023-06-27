@@ -23,14 +23,19 @@ class AuthRequiredMixin(LoginRequiredMixin):
 
 class UserPermissionMixin(UserPassesTestMixin):
     """
-    Authorisation check.
+    Authorization check.
     Prohibits changing an item created by another user.
     """
+    forbidden_fields = ['username']
     permission_message = None
     permission_url = None
 
     def test_func(self):
-        return self.get_object() == self.request.user
+        user = self.get_object()
+        return (
+            user == self.request.user or  # Allow the user to modify their own account
+            (user.username == self.request.user.username and self.request.user.is_superuser)  # Allow admin to modify any account's username
+        )
 
     def handle_no_permission(self):
         messages.error(self.request, self.permission_message)

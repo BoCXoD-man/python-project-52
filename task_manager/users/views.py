@@ -36,8 +36,8 @@ class UserCreateView(SuccessMessageMixin, CreateView):
     }
 
 
-class UserUpdateView(AuthRequiredMixin, UserPermissionMixin,
-                     SuccessMessageMixin, UpdateView):
+
+class UserUpdateView(AuthRequiredMixin, UserPermissionMixin, SuccessMessageMixin, UpdateView):
     """
     Edit existing user.
 
@@ -55,6 +55,9 @@ class UserUpdateView(AuthRequiredMixin, UserPermissionMixin,
         'title': _('Update user'),
         'button_text': _('Update'),
     }
+
+    def form_valid(self, form):
+        return super().form_valid(form)
 
 
 class UserDeleteView(AuthRequiredMixin, UserPermissionMixin,
