@@ -14,7 +14,7 @@ django-filter==22.1
 executing==1.2.0
 flake8==6.0.0
 gunicorn==20.1.0
--e git+ssh://git@github.com/BoCXoD-man/python-project-52.git@92a7782157fc804f3ec024bd9e345e34f2bbb5cb#egg=hexlet_code
+-e git+https://github.com/BoCXoD-man/python-project-52.git@92a7782157fc804f3ec024bd9e345e34f2bbb5cb#egg=hexlet_code
 idna==3.4
 ipython==8.12.2
 jedi==0.18.2
