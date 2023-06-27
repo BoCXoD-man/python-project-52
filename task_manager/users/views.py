@@ -36,8 +36,10 @@ class UserCreateView(SuccessMessageMixin, CreateView):
     }
 
 
-
-class UserUpdateView(AuthRequiredMixin, UserPermissionMixin, SuccessMessageMixin, UpdateView):
+class UserUpdateView(AuthRequiredMixin,
+                     UserPermissionMixin,
+                     SuccessMessageMixin,
+                     UpdateView):
     """
     Edit existing user.
 

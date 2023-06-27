@@ -31,11 +31,7 @@ class UserPermissionMixin(UserPassesTestMixin):
     permission_url = None
 
     def test_func(self):
-        user = self.get_object()
-        return (
-            user == self.request.user or  # Allow the user to modify their own account
-            (user.username == self.request.user.username and self.request.user.is_superuser)  # Allow admin to modify any account's username
-        )
+        return self.get_object() == self.request.user
 
     def handle_no_permission(self):
         messages.error(self.request, self.permission_message)
@@ -60,7 +56,7 @@ class DeleteProtectionMixin:
 
 class AuthorDeletionMixin(UserPassesTestMixin):
     """
-    Authorisation check.
+    Authorization check.
     Prohibits deleting an item not by its author.
     """
     author_message = None
