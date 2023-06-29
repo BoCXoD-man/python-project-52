@@ -106,7 +106,7 @@ WSGI_APPLICATION = 'task_manager.wsgi.application'
 #        'HOST': os.getenv('PGOST'),
 #        'PORT': os.getenv('PGPORT'),
 #    }
-#}
+# }
 
 DATABASES = {
     'default': dj_database_url.config(
