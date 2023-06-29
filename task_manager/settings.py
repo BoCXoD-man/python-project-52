@@ -97,11 +97,22 @@ WSGI_APPLICATION = 'task_manager.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(
-        default='sqlite:///db.sqlite3',
-        conn_max_age=600,
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'DATABASE_URL': os.getenv('DATABASE_URL'),
+        'NAME': os.getenv('PGDATABASE'),
+        'USER': os.getenv('PGUSER'),
+        'PASSWORD': os.getenv('PGPASSWORD'),
+        'HOST': os.getenv('PGOST'),
+        'PORT': os.getenv('PGPORT'),
+    }
 }
+# DATABASES = {
+#    'default': dj_database_url.config(
+#        default='sqlite:///db.sqlite3',
+#        conn_max_age=600,
+#    )
+#}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
