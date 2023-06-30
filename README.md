@@ -29,5 +29,5 @@ This simple web task manager with user, task, label and status models writen on 
 * psycopg2-binary = "^2.9.5"
 
 
-https://python-project-52-production-96e7.up.railway.app/ - Ссылка на Менеджер задач.
+https://python-project-52-production-96e7.up.railway.app/ - Demonstration Page.
 
